@@ -1,0 +1,39 @@
+@use "../utilities/mixin" as *;
+@use "../utilities/variables" as *;
+
+section.bg-light {
+    background: linear-gradient(135deg, #e9ecef, #ffffff);
+}
+
+section.bg-light h1 {
+    color: $color-oscuro;
+}
+
+section.bg-light p {
+    margin-bottom: 1.5rem;
+}
+
+.hero-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-img {
+    flex: 1;
+    text-align: center;
+}
+
+/* Responsive Flex */
+@media (max-width: 768px) {
+    .hero-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+

@@ -1,0 +1,25 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+
+
+
+.footer-flex {
+    @include flex;
+    justify-content: space-between;
+    background-color: $color-secundario;
+    color: #ffffff;
+    padding: 1rem 2rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Responsive footer */
+@media (max-width: 576px) {
+    .footer-flex {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

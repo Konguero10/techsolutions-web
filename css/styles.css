@@ -1,238 +1,180 @@
-/* ======================================================
-   VARIABLES GLOBALES
-   ====================================================== */
-:root {
-    --color-primario: #0d6efd;
-    --color-secundario: #212529;
-    --color-claro: #f8f9fa;
-    --color-oscuro: #1c1c1c;
-    --color-acento: #ffc107;
-
-    --font-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* ======================================================
-   RESET BÁSICO Y ESTILOS GENERALES
-   ====================================================== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: var(--font-principal);
-    color: var(--color-secundario);
-    background-color: var(--color-claro);
-    line-height: 1.6;
+  font-family: #0d6efd;
+  color: #212529;
+  background-color: #f8f9fa;
+  line-height: 1.6;
 }
 
-/* ======================================================
-   HEADER Y NAVBAR
-   ====================================================== */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-acento {
+  color: #ffc107;
+}
+
+.bg-acento {
+  background-color: #ffc107;
+}
+
 .navbar {
-    background-color: var(--color-oscuro) !important;
+  background-color: #212529 !important;
 }
 
 .navbar-brand {
-    font-weight: bold;
-    letter-spacing: 1px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .navbar-nav .nav-link {
-    color: #ffffff;
-    margin-left: 1rem;
-    transition: color 0.3s ease;
+  color: #ffffff;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-    color: var(--color-acento);
+  color: #ffc107;
 }
 
-/* ======================================================
-   HERO SECTION
-   ====================================================== */
-section.bg-light {
-    background: linear-gradient(135deg, #e9ecef, #ffffff);
-}
-
-section.bg-light h1 {
-    color: var(--color-oscuro);
-}
-
-section.bg-light p {
-    margin-bottom: 1.5rem;
-}
-
-/* ======================================================
-   FLEXBOX - HERO SECTION
-   ====================================================== */
-.hero-flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-}
-
-.hero-text {
-    flex: 1;
-}
-
-.hero-img {
-    flex: 1;
-    text-align: center;
-}
-
-/* Responsive Flex */
 @media (max-width: 768px) {
-    .hero-flex {
-        flex-direction: column;
-        text-align: center;
-    }
+  h1 {
+    font-size: 2rem;
+  }
+  .navbar-nav .nav-link {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+  footer {
+    text-align: center;
+  }
+  footer .text-md-end {
+    text-align: center !important;
+    margin-top: 1rem;
+  }
 }
-
-
-/* ======================================================
-   BOTONES
-   ====================================================== */
-.btn-primary {
-    background-color: var(--color-primario);
-    border: none;
-    padding: 0.75rem 1.5rem;
-}
-
-.btn-primary:hover {
-    background-color: #084298;
-}
-
-/* ======================================================
-   TARJETAS / SERVICIOS
-   ====================================================== */
-.card {
-    border: none;
-    border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-.card img {
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-}
-
-.card-title {
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-}
-
-/* ======================================================
-   SECCIÓN DESTACADA
-   ====================================================== */
-section.bg-dark {
-    background-color: var(--color-oscuro) !important;
-}
-
-section.bg-dark h2 {
-    color: #ffffff;
-}
-
-section.bg-dark p {
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-/* ======================================================
-   FLEXBOX - FOOTER
-   ====================================================== */
 .footer-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--color-secundario);
-    color: #ffffff;
-    padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #212529;
+  color: #ffffff;
+  padding: 1rem 2rem;
 }
 
 .footer-links {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 /* Responsive footer */
 @media (max-width: 576px) {
-    .footer-flex {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
+  .footer-flex {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+section.bg-light {
+  background: linear-gradient(135deg, #e9ecef, #ffffff);
 }
 
-
-/* ======================================================
-   IMÁGENES
-   ====================================================== */
-img {
-    max-width: 100%;
-    height: auto;
+section.bg-light h1 {
+  color: #1c1c1c;
 }
 
-/* ======================================================
-   UTILIDADES PERSONALIZADAS
-   ====================================================== */
-.text-acento {
-    color: var(--color-acento);
+section.bg-light p {
+  margin-bottom: 1.5rem;
 }
 
-.bg-acento {
-    background-color: var(--color-acento);
+.hero-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
-/* ======================================================
-   RESPONSIVE DESIGN
-   ====================================================== */
+.hero-text {
+  flex: 1;
+}
+
+.hero-img {
+  flex: 1;
+  text-align: center;
+}
+
+/* Responsive Flex */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
-    }
-
-    .navbar-nav .nav-link {
-        margin-left: 0;
-        margin-top: 0.5rem;
-    }
-
-    footer {
-        text-align: center;
-    }
-
-    footer .text-md-end {
-        text-align: center !important;
-        margin-top: 1rem;
-    }
+  .hero-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+section.bg-dark {
+  background-color: #0d6efd !important;
 }
 
-/* ======================================================
-   GRID - SECCIÓN SERVICIOS
-   ====================================================== */
+section.bg-dark h2 {
+  color: #ffffff;
+}
+
+section.bg-dark p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 .servicios-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+@media (max-width: 768px) {
+  .servicios-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .servicios-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
-/* Responsive Grid */
-@media (max-width: 992px) {
-    .servicios-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+/* boton */
+.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+  padding: 0.75rem 1.5rem;
 }
 
-@media (max-width: 576px) {
-    .servicios-grid {
-        grid-template-columns: 1fr;
-    }
+.btn-primary:hover {
+  background-color: #084298;
 }
 
+.card {
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card-title {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

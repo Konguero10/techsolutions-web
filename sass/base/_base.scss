@@ -1,0 +1,16 @@
+@use "../utilities/mixin" as *;
+@use "../utilities/variables" as *;
+
+body {
+    font-family: $color-primario;
+    color: $color-secundario;
+    background-color: $color-claro;
+    line-height: 1.6;
+}
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}

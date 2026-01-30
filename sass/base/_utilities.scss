@@ -1,0 +1,11 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+
+
+.text-acento {
+    color: $color-acento;
+}
+
+.bg-acento {
+    background-color: $color-acento;
+}

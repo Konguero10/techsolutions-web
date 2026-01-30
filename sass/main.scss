@@ -1,0 +1,22 @@
+//reset
+@use "base/reset";
+@use "base/base";
+@use "base/utilities";
+
+
+//variables
+@use "utilities/variables";
+@use "utilities/mixin";
+
+//layout
+@use "layout/navbar";
+@use "layout/footer";
+@use "layout/hero";
+@use "layout/destacada";
+
+//pages
+@use "pages/servicios";
+
+//components
+@use "components/buttons";
+@use "components/cards";

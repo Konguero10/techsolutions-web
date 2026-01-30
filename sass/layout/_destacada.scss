@@ -1,0 +1,15 @@
+@use "../utilities/mixin" as *;
+@use "../utilities/variables" as *;
+
+section.bg-dark {
+    background-color: $color-primario !important;
+}
+
+section.bg-dark h2 {
+    color: #ffffff;
+}
+
+section.bg-dark p {
+    max-width: 700px;
+    margin: 0 auto;
+}
