@@ -2,7 +2,7 @@
 @use "../utilities/mixin" as *;
 
 .navbar {
-    background-color: $color-secundario !important;
+    background-color: $color-secundario;
 }
 
 .navbar-brand {

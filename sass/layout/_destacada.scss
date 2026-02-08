@@ -2,7 +2,7 @@
 @use "../utilities/variables" as *;
 
 section.bg-dark {
-    background-color: $color-primario !important;
+    background-color: $color-primario;
 }
 
 section.bg-dark h2 {
